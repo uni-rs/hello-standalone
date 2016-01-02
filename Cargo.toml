@@ -1,0 +1,14 @@
+[package]
+
+name = "hello-uni"
+version = "0.0.1"
+authors = ["Baptiste Covolato"]
+
+[dependencies]
+
+rust-libcore = "*"
+
+[dependencies.uni]
+
+path = "https://github.com/uni-rs/uni.rs.git"
+features = [ "xen" ]

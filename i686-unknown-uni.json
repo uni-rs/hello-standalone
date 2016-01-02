@@ -1,0 +1,23 @@
+{
+    "llvm-target": "i686-unknown-none-gnu",
+    "data-layout": "e-p:32:32-f64:32:64-i64:32:64-f80:32:32-n8:16:32",
+    "target-endian": "little",
+    "target-pointer-width": "32",
+    "os": "uni",
+    "executables": true,
+    "features": "-mmx,-sse,-sse2,-sse3,-ssse3",
+    "arch": "x86",
+    "pre-link-args": [
+        "-n",
+        "-m32",
+        "-nostdlib",
+        "-Tlinker.ld",
+        "-z max-page-size=0x1000"
+    ],
+    "code_model": "kernel",
+    "relocation-model": "static",
+    "no-compiler-rt": true,
+    "linker-is-gnu": true,
+    "eliminate-frame-pointer": false,
+    "morestack": false
+}
