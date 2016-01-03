@@ -10,5 +10,5 @@ rust-libcore = "*"
 
 [dependencies.uni]
 
-path = "https://github.com/uni-rs/uni.rs.git"
+git = "https://github.com/uni-rs/uni.rs.git"
 features = [ "xen" ]
