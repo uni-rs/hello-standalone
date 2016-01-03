@@ -1,0 +1,13 @@
+language: rust
+rust:
+    - nightly
+
+env:
+    - target=i686-unknown-uni.json
+    - target=x86_64-unknown-uni.json
+
+os:
+    - linux
+
+script:
+    - cargo build --verbose --target=$target
